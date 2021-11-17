@@ -5,7 +5,7 @@ histogram <- read.csv("histogram.csv")
 
 x <- 1:10000
 
-png(file="convergence_plot.png",
+png(file="/Users/nicolegooding/Desktop/Autumn 2021/Math 381/math381-a6/outputs/convergence_plot.png",
     width=1000, height=600)
 
 plot(x, convergence$run1, ylim = c(0.1, 0.4), type = "l", 
@@ -21,7 +21,7 @@ lines(x, convergence$run9)
 lines(x, convergence$run10)
 dev.off()
 
-png(file="probabilities_histogram.png",
+png(file="/Users/nicolegooding/Desktop/Autumn 2021/Math 381/math381-a6/outputs/probabilities_histogram.png",
     width=1000, height=600)
 
 hist(histogram$probability.histogram, 
